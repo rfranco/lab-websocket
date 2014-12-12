@@ -30,10 +30,10 @@
         <h3 class="text-muted">websocket</h3>
       </div>
 
-      <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
+      <div ui-view ng-cloak></div>
 
       <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <p><span class="glyphicon glyphicon-heart"></span> from the Vamo crew</p>
       </div>
     </div>
 
@@ -72,11 +72,14 @@
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/routes.js"></script>
+        <script src="scripts/factories/wsocket.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <!-- endbuild -->
 </body>
