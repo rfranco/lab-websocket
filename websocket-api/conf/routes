@@ -3,4 +3,6 @@
 # ~~~~
 
 # Home page
-GET         /                     controllers.Application.index
+GET        /                 controllers.Application.index
+
+GET        /websocket        controllers.WebSocketApi.socket
