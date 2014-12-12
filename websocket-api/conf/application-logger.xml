@@ -15,9 +15,8 @@
         </encoder>
     </appender>
 
-    <logger name="RequestTimeLogger" level="INFO"/>
-    <logger name="com.vamo" level="TRACE"/>
-    <logger name="scala.slick" level="WARN"/>
+    <logger name="play" level="DEBUG"/>
+    <logger name="application" level="DEBUG"/>
 
     <root level="WARN">
         <appender-ref ref="STDOUT"/>
