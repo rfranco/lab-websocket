@@ -8,4 +8,7 @@ object Application extends Controller {
     Ok("WebSocket")
   }
 
+  def options(all: String) = Action {
+    Ok("")
+  }
 }

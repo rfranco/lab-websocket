@@ -3,6 +3,6 @@
 # ~~~~
 
 # Home page
-GET        /                 controllers.Application.index
-
-GET        /websocket        controllers.WebSocketApi.socket
+GET            /                 controllers.Application.index
+OPTIONS        /*all             controllers.Application.options(all:String)
+GET            /websocket        controllers.WebSocketApi.socket

@@ -29,7 +29,7 @@ class WebSocketActor(out: ActorRef) extends Actor {
 
   def receive = {
     case msg: String =>
-      Logger.info(s"Receive: $msg")
+      Logger.info(s"Receive: ${self.path} - $msg")
       out ! s"I received your message: $msg"
     case UpdateTime =>
       out ! s"Clock ${DateTime.now}"
