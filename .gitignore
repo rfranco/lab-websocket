@@ -1,0 +1,12 @@
+# Ignore all dotfiles...
+.*
+# except for .gitignore
+!.gitignore
+
+# Ignore log' folders
+log/
+logs/
+
+# Ignore target's folders
+target/
+dist/
